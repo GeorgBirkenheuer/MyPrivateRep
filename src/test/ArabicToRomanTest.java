@@ -113,6 +113,12 @@ class ArabicToRomanTest {
 	}
 	
 	@Test
+	void test1000() {
+		ArabicToRoman rta = new ArabicToRoman();
+		assertEquals("M", rta.convert(1000,""));
+	}
+	
+	@Test
 	void test13789() {
 		ArabicToRoman rta = new ArabicToRoman();
 		assertEquals("MMMMMMMMMMMMMDCCLXXXIX" , rta.convert(13789,""));

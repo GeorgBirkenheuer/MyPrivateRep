@@ -75,6 +75,12 @@ class RomanToArabicTest {
 	}
 	
 	@Test
+	void testZwölf() {
+		RomanToArabic rta = new RomanToArabic();
+		assertEquals(12, rta.convert("XII",""));
+	}
+	
+	@Test
 	void testVierzehn() {
 		RomanToArabic rta = new RomanToArabic();
 		assertEquals(14, rta.convert("XIV",""));

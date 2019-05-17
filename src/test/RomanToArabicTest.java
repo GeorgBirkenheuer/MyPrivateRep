@@ -209,6 +209,11 @@ class RomanToArabicTest {
 		RomanToArabic rta = new RomanToArabic();
 		assertEquals(800, rta.convert("DCCC",""));
 	}
+	@Test
+	void test801() {
+		RomanToArabic rta = new RomanToArabic();
+		assertEquals(801, rta.convert("DCCCI",""));
+	}
 	
 	@Test
 	void test900() {
